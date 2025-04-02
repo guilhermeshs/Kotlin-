@@ -2,8 +2,13 @@ package EXPRESSOES_COMANDOS
 
 fun main() {
     // 1. Comando Skip (não faz nada)
-    // Em Kotlin, um comando vazio pode ser representado por `Unit`
-    println("Início do programa") // Apenas para indicar onde o programa começa
+    // Em Kotlin, um comando vazio pode ser representado por um return ou continue
+
+    fun exemploSkip() {
+        println("Início da função")
+        return // Sai da função imediatamente
+        println("Isso nunca será executado")
+    }
 
     // 2. Comandos de Atribuição
     var x = 10 // Atribuição simples
